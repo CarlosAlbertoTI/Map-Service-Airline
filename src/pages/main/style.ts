@@ -20,7 +20,7 @@ export const FlyInfoAndMapContainer = styled.div`
 export const FlyInfoAndWeatherInformation = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content:center ;
     row-gap: 2rem;
 
@@ -28,7 +28,7 @@ export const FlyInfoAndWeatherInformation = styled.div`
 
 export const FlyInformation = styled.section`
     display: flex;
-    min-width: 490px;
+    min-width: 350px;
     min-height:2rem;
 
     flex-direction: column;

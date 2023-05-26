@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
-  justify-content: f;
+  justify-content: center;
   align-items: center;
   height: 10rem;
   min-height: 100px;

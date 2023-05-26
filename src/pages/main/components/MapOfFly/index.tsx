@@ -28,13 +28,14 @@ export function MapOfFly(props:MapOfFlyProps) {
         <MapContainer>
             {!loading && (
                 <Map
+                    onRender={(event) => event.target.resize()}
                     mapLib={mapboxgl}
                     initialViewState={{
                         latitude: props.centerPoint.lat,
                         longitude: props.centerPoint.lng,
                         zoom: 14
                     }}
-                    style={{ width:'31rem',minWidth: '25rem', height: '31rem', display: 'block' }}
+                    style={{ width:'31vw',minWidth: '350px', height: '31rem', display: 'block' }}
                     mapStyle="mapbox://styles/mapbox/streets-v9"
                     mapboxAccessToken={MAPBOX_TOKEN}
                 >
