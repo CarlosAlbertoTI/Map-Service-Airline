@@ -3,7 +3,7 @@ import { AxiosHttpService } from "../../service/http/http.service";
 
 export class WeatherRepository implements IWeatherRepository {
   _httpService = new AxiosHttpService(
-    "http://api.weatherapi.com/v1/current.json"
+    "https://api.weatherapi.com/v1/current.json"
   );
 
   async getWeatherOfTown(city: string) {
