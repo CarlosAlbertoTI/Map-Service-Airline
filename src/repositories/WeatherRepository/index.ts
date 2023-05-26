@@ -18,7 +18,8 @@ export class WeatherRepository implements IWeatherRepository {
       },
     });
 
-
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const description = data.current.condition.text;
     const {
       wind_kph: wind_speedy,
@@ -27,6 +28,8 @@ export class WeatherRepository implements IWeatherRepository {
       humidity,
       cloud: cloudiness,
       feelslike_c: temperature,
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
     } = data.current;
 
     return {
